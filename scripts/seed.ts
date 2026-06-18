@@ -19,6 +19,14 @@ async function main() {
   await mongoose.connect(uri);
   console.log("Connected. Seeding…");
 
+  // Clear categories and drop problematic indexes
+  await Category.collection.deleteMany({});
+  try {
+    await Category.collection.dropIndex("slug_1");
+  } catch (e) {
+    // Index may not exist, ignore
+  }
+
   const adminEmail = process.env.SEED_ADMIN_EMAIL || "admin@iims.local";
   const adminPass = process.env.SEED_ADMIN_PASSWORD || "ChangeMe123!";
 
