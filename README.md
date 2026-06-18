@@ -7,6 +7,14 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshaktixdev%2Findustrial-inventory-management-system&env=MONGODB_URI,NEXTAUTH_SECRET,NEXTAUTH_URL&envDescription=MongoDB%20URI%2C%20NextAuth%20secret%20and%20deployed%20URL&envLink=https%3A%2F%2Fgithub.com%2Fshaktixdev%2Findustrial-inventory-management-system%2Fblob%2Fmain%2Fdocs%2FDEPLOYMENT.md)
+
+Click the button, set the three environment variables when prompted, then run
+`npm run seed` against your MongoDB once to create the admin user. Full guide:
+[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
 ---
 
 ## Overview

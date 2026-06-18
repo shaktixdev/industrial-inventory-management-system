@@ -1,0 +1,10 @@
+# Files not needed in the Vercel deployment bundle
+docs
+.github
+README.md
+LICENSE
+*.md
+.env
+.env*.local
+node_modules
+.next
